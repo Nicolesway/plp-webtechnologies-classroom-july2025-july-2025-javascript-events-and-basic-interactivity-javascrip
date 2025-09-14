@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Web Page</h1>
+    <button id="themeToggle">Switch Theme</button>
+  </header>
+
+  <!-- Section 1: Custom Form -->
+    <section id="formSection">
+  <h2>Sign Up</h2>
+  <form id="signupForm" class="form-grid">
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter username">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <!-- Button takes full width in grid -->
+    <button type="submit" class="full-width">Submit</button>
+  </form>
+  <p id="formMessage"></p>
+</section>
+
+  <!-- Section 2: FAQ -->
+  <section id="faqSection">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3 class="question">What is this project?</h3>
+      <p class="answer hidden">An illustartion of HTML, CSS, and JS interactivity.</p>
+    </div>
+    <div class="faq">
+      <h3 class="question">How does the form work?</h3>
+      <p class="answer hidden">It uses JavaScript validation for input fields.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
